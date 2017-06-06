@@ -1,3 +1,95 @@
-<h1>
-  {{title}}
-</h1>
+
+<div id="container">
+    <div id="header">
+        <h1><a href="">Interfaz para las tablas</a></h1>
+        <h2>Por el equipo Violeta</h2>
+        <div class="clear"></div>
+    </div>
+    <!--
+    <div id="nav">
+        <ul>
+            <li><a href="C:/VIOLETA/aphotic/buscar.html#">Buscar</a></li>
+            <li><a href="C:/VIOLETA/aphotic/insertar.html#">Insertar</a></li>
+            <li><a href="C:/VIOLETA/aphotic/modificar.html#">Modificar Registro</a></li>
+            <li><a href="C:/VIOLETA/aphotic/actualizar.html#">Actualizar Colección</a></li>
+            <li><a href="C:/VIOLETA/aphotic/eliminar.html#">Eliminar</a></li>
+        </ul>
+    </div>
+    -->
+
+    <div id="cabeza">
+        <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+            <ul class="navi">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Evalula</a>
+                    <ul>
+                        <li><a href="">oportunidades</a></li>
+                        <li><a href="">curriculos</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Catalogos</a>
+                    <ul>
+                        <li><a routerLink="/catige">tipo generales</a>
+                        </li>
+                        <li><a href="/cagene">generales</a>
+                        </li>
+                        <li><a href="/caties">tipo estatus</a>
+                        </li>
+                        <li><a href="/caesta">estatus</a>
+                        </li>
+                        <li><a href="">personas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Catalogos de evaluacion</a>
+                    <ul>
+                        <li><a href="">actividades</a></li>
+                        <li><a href="">competencias</a></li>
+                        <li><a href="">conocimientos</a></li>
+                        <li><a href="">curso estudios</a></li>
+                        <li><a href="">metodologia</a> </li>
+                        <li><a href="">perfiles</a></li>
+                        <li><a href="">puestos</a></li>
+                        <li><a href="">tipo competencias</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+        
+    </div>
+
+
+    <div id="body">
+        <router-outlet></router-outlet> 
+
+        <div class="clear"></div>
+    </div>
+
+    <div id="footer">
+        <div class="footer-content">
+
+            <p>Diseño por equipo violeta parte de NoSQL ITT</p>
+        </div>
+    </div>
+
+    <div class="modal" id="img1">
+        <h3>Imagen del esquema</h3>
+        <div class="imagen">
+            <a><img src="assets/images/1.jpg"></a>
+        </div>
+        <a class="cerrar" href="">x</a>
+    </div>
+
+    <div class="clear"></div>
+    
+    
+
+
+    
+</div>
+
+<div style="text-align: center; font-size: 0.75em;">mami yo me siento tuyo yo se que tu te sientes mia.</div>
+
+
+
+  

@@ -1,5 +1,5 @@
 body {
-	background: #000 url('./images/bodybg.jpg') repeat-x scroll top left;
+	background: #000 url('../images/bodybg.jpg') repeat-x scroll top left;
 	margin:0;
 	padding:0;
 	font-family: Verdana, Geneva, sans-serif;
@@ -58,7 +58,7 @@ th, td {
 
 th {
 	color: #fff;
-	background: #554667 url(images/navbg.jpg) repeat-x scroll -15px 0;
+	background: #554667 url('../images/navbg.jpg') repeat-x scroll -15px 0;
 }
 
 td {
@@ -138,7 +138,7 @@ form input, form select, form textarea {
 
 form input.formbutton {
 	border: none;
-	background: #FFFFFF url(images/bodybg.jpg) repeat-x scroll 0 -160px;
+	background: #FFFFFF url('../images/bodybg.jpg') repeat-x scroll 0 -160px;
 	color: #ffffff;
 	font-weight: bold;
 	padding: 5px 10px;
@@ -211,13 +211,16 @@ li ol, li ul {
 	margin-bottom: 0;
 	padding-top: 0px;
 }
-
+.sidebar{
+    margin-left: 0.3em;
+    width: 30% !important;
+}
 
 #container {
 	width: 970px;
 	margin:0 auto;
 	padding: 0;
-	background: transparent url('./images/content-bg.jpg') no-repeat scroll 0 160px;
+	background: transparent url('../images/content-bg.jpg') no-repeat scroll 0 160px;
 }
 
 #header {
@@ -255,7 +258,7 @@ li ol, li ul {
 }
 
 #nav {
-	background: #fff url('./images/navbg.jpg') repeat-x scroll top left;
+	background: #fff url('../images/navbg.jpg') repeat-x scroll top left;
 	height: 50px;
 	width: 970px;
 }
@@ -367,7 +370,7 @@ li ol, li ul {
 }
 
 .sidebar h4 {
-	background: #554667 url(images/navbg.jpg) repeat-x scroll -15px 0;
+	background: #554667 url('../images/navbg.jpg') repeat-x scroll -15px 0;
 	color: #FFFFFF;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 14px;
@@ -388,7 +391,7 @@ li ol, li ul {
 }
 
 .footer-content {
-	background: #000 url('./images/footer.jpg') repeat-x scroll top left;
+	background: #000 url('../images/footer.jpg') repeat-x scroll top left;
 	padding: 20px 5px;
 }
 

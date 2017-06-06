@@ -1,0 +1,144 @@
+  
+
+
+   <div id="content">
+            <h2>{{title}}</h2>
+            <p>Eaqui se insertara a la coleccion correspondiente</p>
+            <div *ngIf="selectedInsertOpt" class="estiloinsertar">
+                <div *ngIf="seEnvio" class="alert alert-success alert-dismissable fade in">
+    
+    <strong>Success!</strong> Los datos han sido enviados satisfactoriamente!!.
+    <span><button class="btn btn-success" (click)="closeSuccess()" style="padding:1em;">X</button></span>
+
+  </div>
+
+                  <div *ngIf="estaVacio" class="alert alert-danger alert-dismissable fade in">
+    
+    <strong>Cuidado!</strong> Se requieren los dos campos.
+  </div>
+                <h1>Insertar Tipos Generales </h1>
+           
+                    <div class="form-group">
+                        <label for="id">Id Tipos Generales:</label>
+                        <input #newId class="form-control" required [(ngModel)]="id"/>
+                                               
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descripcion Tipos Generales:</label>
+                        <input #newDescription class="form-control" [(ngModel)]="description">                                
+                    </div>
+                    <br>
+                    <div class="boton">
+                        <button type="button" class="btn btn-success  btn-lg" (click)="addCatige(newId.value,newDescription.value)">Agregar</button>
+
+                    </div>
+
+                    
+             
+
+            </div>
+
+            <div *ngIf="selectedUpdateOpt" class="estiloactualizar">
+                <h1>Actualizar </h1>
+                <label for="id">Id Tipos Generales:</label>
+                <input type="text" id="id">
+                <button type="button">Enviar</button>
+
+            </div>
+            <div *ngIf="selectedDeleteOpt" class="estiloeliminar">
+                <h1>Eliminar </h1>
+                <label for="id">Id Tipos Generales:</label>
+                <input type="text" id="description">
+                <button type="button">Enviar</button>
+
+            </div>          
+           <div class="col-md-12">
+  
+  <h1>Catalogos Tipo Estatus</h1>
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Descripcion</th>
+        <th>Acciones</th>
+     
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let categoria of categorias">
+        <td>{{ categoria.IdTipoGeneral }}</td>
+        <td>{{ categoria.DesTipoGeneral }}</td>
+        <td  style="padding:1em;">
+          <span><button class="btn btn-danger" (click)="remove(categoria._id)"><i class="glyphicon glyphicon-remove"></i></button></span>
+          <span><button class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></button></span></td>
+      
+      </tr>
+     </tbody>
+  </table>
+
+  </div>
+
+            
+        
+            
+            
+        </div>
+       
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <h4><span>Acciones para {{title}}</span></h4>
+                    <ul class="blocklist">
+                        <li><a> <button type="button" (click)="insertar()">Insertar</button></a></li>
+                        <li><a> <button type="button" (click)="modificar()">Actualizar</button></a></li>
+                        <li><a> <button type="button" (click)="eliminar()">Eliminar</button></a></li>
+                        <li><a href="">Modificar campos</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Busqueda inmediata</h4>
+                    <ul>
+                        <li>
+                            <form method="get" class="searchform" action="http://wpdemo.justfreetemplates.com/" >
+                                <p>
+                                    <input type="text" size="24" value="" name="s" class="s" />
+                                    <input type="submit" class="searchsubmit formbutton" value="Buscar" />
+                                </p>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>imagen del diagrama</h4>
+                    <ul class="galeria">
+                        <li><a href=""><img src="assets/images/2.PNG"width="260"height="200" border="2"></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Informacion</h4>
+                    <ul>
+                        <li>
+                            <p style="margin: 0;">Esta informacion pertenece al proyecto de NoSQL y sera evaluada por los
+                                responsables de la materia.</p>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Integrantes</h4>
+                    <ul>
+                        <li>Pablo Crespo</li>
+                        <li>Ricardo Caro</li>
+                        <li>Eduardo Fregoso</li>
+                        <li>Julio Valencia</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+       
